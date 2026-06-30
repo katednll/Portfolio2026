@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kate Danielle Borja | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Kate Danielle Borja</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="themeToggle">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <img src="../Portfolio2026/image/me-vector.png" alt="Profile Picture" class="profile-img" id="profilePic">
+  <!-- <img src="../Portfolio2026/image/me-gif.gif" alt="Profile Picture" class="profile-img"> -->
+  <h2>Software Engineer | .NET Developer</h2>
+  <p>6+ years of experience in ASP.NET Core, C#, Angular, SQL, Azure, and ETL development.</p>
+  <a href="#contact" class="btn">Hire Me</a>
+  <a href="../Portfolio2026/documents/resume.pdf" class="btn" download>Download Resume</a>
+</section>
+
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Software Engineer with proven expertise in ASP.NET Core, C#, Angular, SQL, Azure cloud solutions, and ETL development using SSIS. Skilled in process improvement, automation, and collaboration with technical teams and business users.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <span>ASP.NET Core</span>
+      <span>C#, TypeScript, JavaScript</span>
+      <span>Angular 14, HTML, CSS</span>
+      <span>SQL, MySQL, MSSQL</span>
+      <span>Azure Cloud & DevOps</span>
+      <span>SSIS & ETL</span>
+      <span>Terraform</span>
+      <span>Node.js</span>
+      <span>Agile methodologies</span>
+      <span>Process improvement</span>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="job">
+      <h3>.NET Developer | SLI Consulting Inc. / CTBC Bank</h3>
+      <p>09/2025 - 03/2026</p>
+      <ul>
+        <li>Developed ETL framework in C#, .NET Core, SQL, Oracle SQL Dev.</li>
+        <li>Created technical documentation and automated processes.</li>
+        <li>Conducted quality testing and production implementation.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Material Handler | Randstad / RK Logistics</h3>
+      <p>08/2024 - 08/2025</p>
+      <ul>
+        <li>Conducted quality control assessments and material audits.</li>
+        <li>Managed SAP processes to streamline workflow.</li>
+      </ul>
+    </div>
+    <!-- Add other jobs similarly -->
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+      <div class="project-card" onclick="openModal('POS System','Built a Point of Sale system with inventory and billing features using ASP.NET Core and Angular.')">
+        <h3>POS System</h3>
+        <p>Prototype with billing & inventory</p>
+      </div>
+      <div class="project-card" onclick="openModal('ETL Framework','Developed a standardized ETL framework for CTBC Bank using C#, SQL, and SSIS.')">
+        <h3>ETL Framework</h3>
+        <p>Data integration & automation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <p>Bachelor of Science in Information Technology, University of the East - Caloocan (2019)</p>
+    <p>Certification: Scrum Foundation Professional Certificate (SFPC)</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kateborja19@gmail.com">kateborja19@gmail.com</a></p>
+    <p>Phone: <a href="tel:+639690556796">+639690556796</a></p>
+    <p>Location: Malabon, Philippines</p>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Kate Danielle Borja. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

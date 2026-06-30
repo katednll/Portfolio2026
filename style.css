@@ -1,0 +1,66 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; line-height: 1.6; transition: background 0.3s, color 0.3s; }
+header { background: #333; color: #fff; padding: 1rem; }
+.navbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+.nav-links { list-style: none; display: flex; flex-wrap: wrap; }
+.nav-links li { margin: 0 10px; }
+.nav-links a { color: #fff; text-decoration: none; }
+#themeToggle { background: none; border: none; color: #fff; font-size: 1.2rem; cursor: pointer; }
+
+.hero { text-align: center; padding: 2rem; background: #f4f4f4; }
+.profile-img {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+  content: url("../Portfolio2026/image/me-gif.gif");
+}
+
+/* Resume button styling */
+.btn { 
+  display: inline-block; 
+  padding: 10px 20px; 
+  background: #333; 
+  color: #fff; 
+  text-decoration: none; 
+  border-radius: 5px; 
+  transition: background 0.3s; 
+  margin: 5px;
+}
+.btn:hover { background: #555; }
+
+
+section { padding: 2rem; }
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.skills-grid span { background: #eee; padding: 10px; border-radius: 5px; text-align: center; }
+
+.job { margin-bottom: 1.5rem; }
+footer { text-align: center; background: #333; color: #fff; padding: 1rem; margin-top: 2rem; }
+
+form { display: flex; flex-direction: column; max-width: 400px; margin: auto; }
+form input, form textarea { margin: 10px 0; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+form button { background: #333; color: #fff; padding: 10px; border: none; cursor: pointer; border-radius: 5px; transition: background 0.3s; }
+form button:hover { background: #555; }
+
+/* Projects */
+.project-gallery { display: flex; gap: 20px; flex-wrap: wrap; }
+.project-card { background: #eee; padding: 20px; border-radius: 8px; cursor: pointer; flex: 1; min-width: 200px; transition: transform 0.3s, background 0.3s; }
+.project-card:hover { transform: scale(1.05); background: #ddd; }
+
+/* Modal */
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; }
+.modal-content { background: #fff; padding: 20px; border-radius: 8px; max-width: 500px; text-align: center; position: relative; }
+.close { position: absolute; top: 10px; right: 15px; font-size: 1.5rem; cursor: pointer; }
+
+/* Dark Mode */
+body.dark { background: #121212; color: #e0e0e0; }
+body.dark header { background: #222; }
+body.dark .btn, body.dark form button { background: #555; color: #fff; }
+body.dark .project-card { background: #333; color: #fff; }
+body.dark .skills-grid span { background: #333; color: #fff; }
+body.dark .hero { background: #1e1e1e; }
+body.dark footer { background: #222; }
