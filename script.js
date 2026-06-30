@@ -1,9 +1,22 @@
-// Dark mode toggle
+// Get the toggle button
 const themeToggle = document.getElementById("themeToggle");
+
+// Load preference on page load
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark");
+  themeToggle.textContent = "☀️";
+} else {
+  themeToggle.textContent = "🌙";
+}
+
+// Save preference when toggled
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
-  themeToggle.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+  const isDark = document.body.classList.contains("dark");
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+  themeToggle.textContent = isDark ? "☀️" : "🌙";
 });
+
 
 // Contact form handler
 document.getElementById("contactForm").addEventListener("submit", function(e) {
